@@ -56,11 +56,10 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _icon() {
-    return Container(
-      decoration: BoxDecoration(
-          border: Border.all(color: Colors.white, width: 2),
-          shape: BoxShape.circle),
-      child: const Icon(Icons.person, color: Colors.white, size: 120),
+    return CircleAvatar(
+      radius: 60, // Adjust the size as needed
+      backgroundImage: AssetImage(
+          'assets/images/splash_logo.jpg'), 
     );
   }
 
@@ -68,13 +67,13 @@ class _LoginScreenState extends State<LoginScreen> {
       {isPassword = false}) {
     var border = OutlineInputBorder(
         borderRadius: BorderRadius.circular(18),
-        borderSide: const BorderSide(color: Colors.white));
+        borderSide: const BorderSide(color: Colors.black));
     return TextField(
-      style: const TextStyle(color: Colors.white),
+      style: const TextStyle(color: Colors.black),
       controller: controller,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: const TextStyle(color: Colors.white),
+        hintStyle: const TextStyle(color: Colors.black),
         enabledBorder: border,
         focusedBorder: border,
       ),
@@ -105,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) {
-              return SignupScreen(); // Gantilah dengan widget halaman tujuan yang sesuai
+              return SignupScreen();
             },
           ));
         },

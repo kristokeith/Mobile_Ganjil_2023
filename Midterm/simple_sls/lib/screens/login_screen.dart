@@ -73,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
       controller: controller,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: const TextStyle(color: Colors.black),
+        hintStyle: const TextStyle(color: Color.fromARGB(255, 66, 66, 66)),
         enabledBorder: border,
         focusedBorder: border,
       ),

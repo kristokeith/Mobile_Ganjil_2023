@@ -131,6 +131,9 @@ class _SignupScreenState extends State<SignupScreen> {
                                 return null;
                               },
                             ),
+                            inputFile(
+                                controller: addressController,
+                                label: "Address"),
                           ],
                         ),
                         Container(

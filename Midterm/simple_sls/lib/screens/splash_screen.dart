@@ -34,10 +34,19 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 30,
             ),
             Text(
-              'Keith Cahyawiyanata',
+              'Midterm Mobile Splash Login Signup',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
+                color: Colors.black, 
+              ),
+            ),
+            SizedBox(height: 2,),
+            Text(
+              'Keith Cahyawiyanata',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.normal,
                 color: Colors.black, 
               ),
             ),
@@ -55,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
               'TI - 3I',
               style: TextStyle(
                 fontSize: 20,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.normal,
                 color: Colors.black, 
               ),
             ),

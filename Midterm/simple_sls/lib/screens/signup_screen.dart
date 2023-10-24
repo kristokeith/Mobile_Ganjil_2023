@@ -26,7 +26,7 @@ class _SignupScreenState extends State<SignupScreen> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.blue[400],
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);

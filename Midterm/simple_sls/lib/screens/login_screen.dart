@@ -10,7 +10,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  TextEditingController usernameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
   @override
@@ -37,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
           const SizedBox(
             height: 50,
           ),
-          _inputField("Username", usernameController),
+          _inputField("Email", emailController),
           const SizedBox(
             height: 20,
           ),
@@ -118,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
         return AlertDialog(
           title: new Text("Login Screen"),
           content: Text(
-              "Email: ${usernameController.text}\nPassword: ${passwordController.text}"),
+              "Email: ${emailController.text}\nPassword: ${passwordController.text}"),
           actions: <Widget>[
             TextButton(
                 child: Text('Cancel'),
@@ -128,7 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
             TextButton(
                 child: Text('Ok'),
                 onPressed: () {
-                  usernameController.clear();
+                  emailController.clear();
                   passwordController.clear();
                   Navigator.of(context).pop();
                 })

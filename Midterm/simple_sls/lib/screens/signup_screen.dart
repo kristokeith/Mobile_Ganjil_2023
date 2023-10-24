@@ -64,7 +64,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             CircleAvatar(
                               radius: 50,
                               backgroundImage:
-                                  AssetImage('assets/images/splash_logo.jpg'),
+                                  AssetImage('assets/images/avatar.jpg'),
                             ),
                             SizedBox(height: 5),
                             Text(

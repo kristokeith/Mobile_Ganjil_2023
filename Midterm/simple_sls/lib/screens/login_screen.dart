@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return CircleAvatar(
       radius: 60, // Adjust the size as needed
       backgroundImage: AssetImage(
-          'assets/images/splash_logo.jpg'), 
+          'assets/images/avatar.jpg'), 
     );
   }
 

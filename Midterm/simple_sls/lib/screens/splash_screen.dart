@@ -33,6 +33,33 @@ class _SplashScreenState extends State<SplashScreen> {
             const SizedBox(
               height: 30,
             ),
+            Text(
+              'Keith Cahyawiyanata',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.black, 
+              ),
+            ),
+            SizedBox(height: 2,),
+            Text(
+              '2141720217',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.normal,
+                color: Colors.black87, 
+              ),
+            ),
+            SizedBox(height: 2,),
+            Text(
+              'TI - 3I',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.black, 
+              ),
+            ),
+            SizedBox(height: 20,),
             if (defaultTargetPlatform == TargetPlatform.android)
               const CircularProgressIndicator(
                 color: Colors.blue,
